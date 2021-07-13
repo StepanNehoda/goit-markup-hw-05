@@ -93,6 +93,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
+  transition: color 250ms var(--trainsition-timing-function);
 }
 
 .menu-link:hover,
@@ -130,6 +131,7 @@ body {
   color: var(--maincolorsilver);
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms var(--trainsition-timing-function);
 }
 
 .contacts-link:hover,
@@ -150,6 +152,7 @@ body {
 .svg-logo {
   fill: currentColor;
   margin-right: 10px;
+  transition: fill 250ms var(--trainsition-timing-function);
 }
 
 .contacts-link:hover .svg-logo,
@@ -200,6 +203,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  transition: box-shadow 250ms var(--trainsition-timing-function);
 }
 .hero {
   background-color: var(--maincolorherofooter);
@@ -283,7 +287,9 @@ body {
   left: 0;
   bottom: 0;
   text-align: center;
-  padding-top: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .whatwedo-text {
@@ -294,9 +300,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--maincolorwhite);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 /* TEAM STYLES */
 .team {
@@ -375,6 +378,8 @@ body {
   border-radius: 50%;
   background-color: transparent;
   fill: var(--clientsbordercolor);
+  transition: background-color 250ms var(--trainsition-timing-function),
+    fill 250ms var(--trainsition-timing-function);
 }
 
 .social-list-link:hover,
@@ -419,12 +424,15 @@ body {
   border: 1px solid var(--clientsbordercolor);
   border-radius: 4px;
   fill: var(--clientsbordercolor);
+  transition: border-color 250ms var(--trainsition-timing-function),
+    fill 250ms var(--trainsition-timing-function);
 }
 
 .client-link:hover .icon-color,
 .client-link:focus .icon-color {
   border-color: var(--maincoloreff);
   fill: var(--maincoloreff);
+  transition: fill 250ms var(--trainsition-timing-function);
 }
 
 .client-link:hover,
@@ -524,6 +532,8 @@ body {
   height: 44px;
   border-radius: 50%;
   background-color: var(--socialfootercolor);
+  transition: background-color 250ms var(--trainsition-timing-function),
+    fill 250ms var(--trainsition-timing-function);
 }
 
 .socialfooter-list-link:hover,
@@ -609,8 +619,8 @@ body {
 
 .shadow-items:hover,
 .shadow-items:focus {
-  display: block;
-  box-shadow: var(--box-shadow) 250ms var(--trainsition-timing-function);
+  box-shadow: var(--box-shadow);
+  transition: box-shadow 250ms var(--trainsition-timing-function);
 }
 
 /* backdrop */
