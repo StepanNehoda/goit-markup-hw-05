@@ -559,11 +559,13 @@ body {
   line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--maincolorblack);
-  background: var(--maincolorbtteam);
+  background-color: var(--maincolorbtteam);
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
   padding: 6px 22px;
+  transition: background-color 250ms var(--trainsition-timing-function),
+    color 250ms var(--trainsition-timing-function);
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -571,6 +573,7 @@ body {
   background: var(--maincoloreff);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 250ms var(--trainsition-timing-function);
 }
 
 .main-images-name {
@@ -615,12 +618,12 @@ body {
 .shadow-items {
   display: block;
   position: relative;
+  transition: box-shadow 250ms var(--trainsition-timing-function);
 }
 
 .shadow-items:hover,
 .shadow-items:focus {
   box-shadow: var(--box-shadow);
-  transition: box-shadow 250ms var(--trainsition-timing-function);
 }
 
 /* backdrop */
